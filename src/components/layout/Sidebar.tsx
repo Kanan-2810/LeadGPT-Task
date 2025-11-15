@@ -16,6 +16,7 @@ import KnowledgeBaseIcon from "../../assets/icons/knowledgebase.svg";
 import LogoIcon from "../../assets/icons/Icon.svg";
 import CollapseIcon from "../../assets/icons/collapse.svg";
 import SidebarProfileIcon from "../../assets/icons/side-profile.svg";
+import HelpIcon from "../../assets/icons/help.svg";
 
 type NavItem = {
   label: string;
@@ -236,11 +237,18 @@ const Sidebar = () => {
             </div>
           </div>
 
-          <div className="flex w-full items-center gap-3 border-t-2 border-slate-200 pt-3 text-sm font-medium text-slate-700 transition">
-            <span className="flex h-10 w-10 items-center justify-center text-slate-700">
-              ?
-            </span>
-            <div className="flex-1 text-left">Help and Support</div>
+          <div className="-mx-4 px-4 border-t-2 border-slate-200">
+            <div className="flex w-full items-center content-center gap-3 pt-3 text-sm font-medium text-slate-700 transition">
+              <Image
+                // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+                src={HelpIcon}
+                alt="Arrow"
+                width={20}
+                height={20}
+                className="h-5 w-5 object-contain"
+              />
+              <div className="flex-1 text-left">Help and Support</div>
+            </div>
           </div>
         </div>
       )}
